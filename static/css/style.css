@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Cebo';
+    src: url('/static/fonts/cebo.ttf');
+    /*src: url("{{ url_for('static', filename= 'fonts/cebo.ttf') }}");*/
+}
+body{
+    background: #659ca3;
+}
+
+p{
+    color:rgb(157, 248, 213);
+    font-family: 'Cebo';
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+    display: block;
+    text-align: center;
+    
+}
+@media screen and (max-width: 600px) {
+    p{
+        color:rgb(157, 248, 213);
+        font-family: 'Cebo';
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70%;
+        display: block;
+        text-align: center;
+        
+    }
+}
+@media screen and (max-width: 446px) {
+    p{
+        color:rgb(157, 248, 213);
+        font-family: 'Cebo';
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100%;
+        display: block;
+        text-align: center;
+        
+    }
+}
+.main_block {
+    border: 2px rgb(19, 145, 124) solid;
+    border-radius: 20px;
+    background-color: rgb(0, 99, 82);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20%;
+    /*transform: translate(0px,330px);*/
+    font-family: 'Cebo';
+    transition: 0.55s;
+}
+.main_block h1{
+    color:rgb(157, 248, 213);
+    transition: 0.25s;
+}
+.main_block h1:hover{
+    letter-spacing: 3px;
+}
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+.input-file-btn {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: middle;
+	color: rgb(255 255 255);
+	text-align: center;
+	border-radius: 4px;
+	background-color: #419152;
+	line-height: 22px;
+	height: 40px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	width: 150px;
+	transition: background-color 0.25s;
+	transition: 0.25s;
+}
+.input-file-text {
+	padding: 0 10px;
+	line-height: 40px;
+	display: inline-block;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+.input-file input[type=submit] {
+	display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+	background-color: #419152;
+    color: white;
+	width: 100px;
+	height: 40px;
+    font-family: Cebo;
+	border-radius: 4px;
+    border:none;
+    transition: 0.25s;
+}
+
+.input-file input[type=file]:focus + .input-file-btn {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.input-file input:hover {
+	background-color: #59be6e;
+    width: 200px;
+}
+
+.input-file input:active {
+	background-color: #2E703A;
+}
+
+.input-file .input-file-btn:hover {
+	background-color: #59be6e;
+    width: 200px;
+}
+
+.input-file .input-file-btn:active {
+	background-color: #2E703A;
+}
+
+.input-file input[type=file]:disabled + .input-file-btn {
+	background-color: #eee;
+}
